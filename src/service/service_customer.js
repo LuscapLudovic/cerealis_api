@@ -1,9 +1,9 @@
 const model_customer = require('../models/model_customer');
 
 module.exports = {
-    new_customer : (prenom, email) => {
+    new_customer : (name, email) => {
         return new Promise((resolve, reject) => {
-            model_customer.insert_customer(prenom, email)
+            model_customer.insert_customer(name, email)
                 .then((data) => {
                     resolve(data[0]);
                 })
