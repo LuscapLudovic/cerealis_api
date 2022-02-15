@@ -17,4 +17,4 @@ server.listen(process.env.PORT, function () {
     console.log("listen port : "+ process.env.PORT);
 });
 
-module.exports = server;
+module.exports = server
